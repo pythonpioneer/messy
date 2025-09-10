@@ -11,7 +11,7 @@
     "format:check": "prettier --check src",
     "prepare": "husky install",
     "test": "npm run build:prod && node --test ./dist/__tests__/**/*.test.js",
-    "test:coverage": "npm run build:prod && c8 --100 --reporter=text --reporter=html node --expose-gc --test ./dist/__tests__/**/*.test.js",
+    "test:coverage": "npm run build && c8 --100 --reporter=text --reporter=html node --expose-gc --test ./dist/__tests__/**/*.test.js",
     "cli": "npm run build && npm link",
     "build:prod": "rollup -c rollup.config.mjs"
   },
