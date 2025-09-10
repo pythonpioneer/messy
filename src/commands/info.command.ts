@@ -10,5 +10,6 @@ export default function registerInfocommand(program: Command) {
             console.log(`Name: ${AUTHOR_INFO.NAME}`);
             console.log(`Email: ${AUTHOR_INFO.EMAIL}`);
             console.log(`GitHub: ${AUTHOR_INFO.GITHUB}`);
+            console.log();
         });
 }

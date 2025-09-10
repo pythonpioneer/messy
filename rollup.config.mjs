@@ -39,6 +39,5 @@ export default {
         'perf_hooks',
         // leave commander external if you want smaller bundles
         // otherwise Rollup will include it
-        'commander',
     ],
 };

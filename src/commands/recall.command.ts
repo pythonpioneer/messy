@@ -13,12 +13,15 @@ export default function registerRecallCommand(program: Command) {
             try {
                 if (fs.existsSync(hrkDir)) {
                     console.log(MESSAGES.HRK_ALREADY_EXISTS);
+                    console.log();
                 } else {
                     fs.mkdirSync(hrkDir);
                     console.log(MESSAGES.HRK_CREATED);
+                    console.log();
                 }
             } catch {
                 console.error(MESSAGES.FAILED_TO_CREATE_HRK);
+                console.log();
             }
         });
 }

@@ -16,11 +16,13 @@ export default function registerHideCommand(program: Command) {
 
             if (!fs.existsSync(dirPath) || !fs.statSync(dirPath).isDirectory()) {
                 console.error(MESSAGES.HRK_DOES_NOT_EXISTS);
+                console.log();
                 process.exit(1);
             }
 
             if (fs.existsSync(passPath)) {
                 console.log(MESSAGES.ENC_WARNING);
+                console.log();
                 process.exit(1);
             }
 
@@ -29,6 +31,7 @@ export default function registerHideCommand(program: Command) {
 
             if (password !== confirmPassword) {
                 console.log(MESSAGES.PASSWORD.PASSWORD_MISMATCH);
+                console.log();
                 process.exit(1);
             }
             const { hash, salt } = hashPassword(password);
@@ -39,8 +42,10 @@ export default function registerHideCommand(program: Command) {
             try {
                 encFile(dirPath, password);
                 console.log(MESSAGES.SUCCESSFULLY_ENCRYPTED);
+                console.log();
             } catch {
                 console.error(MESSAGES.ENCRYPTION_FAILED);
+                console.log();
             }
         });
 }

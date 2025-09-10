@@ -16,6 +16,7 @@ export default function registerShowCommand(program: Command) {
 
             if (!fs.existsSync(passPath)) {
                 console.error(MESSAGES.PASSWORD.VERFICATION_FILE_MISSING);
+                console.log();
                 process.exit(1);
             }
 
@@ -24,6 +25,7 @@ export default function registerShowCommand(program: Command) {
 
             if (!verifyPassword(password, stored.hash, stored.salt)) {
                 console.error(MESSAGES.PASSWORD.INCORRECT_PASSWORD);
+                console.log();
                 process.exit(1);
             }
 
@@ -31,8 +33,10 @@ export default function registerShowCommand(program: Command) {
                 decFile(dirPath, password);
                 fs.unlinkSync(passPath); // delete verification file after success
                 console.log(MESSAGES.SUCCESSFULLY_DECRYPTED);
+                console.log();
             } catch {
                 console.error(MESSAGES.DECRYPTION_FAILED);
+                console.log();
             }
         });
 }
