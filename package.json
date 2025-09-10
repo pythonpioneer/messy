@@ -1,6 +1,6 @@
 {
   "name": "mostlymessy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI tool to safe your files and documents",
   "scripts": {
     "build": "tsc",
@@ -18,7 +18,24 @@
   "bin": {
     "messy": "./dist/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "mostlymessy",
+    "messy",
+    "encrypt",
+    "decrypt",
+    "file-encryption",
+    "secure-files",
+    "password-protected",
+    "file-security",
+    "command-line",
+    "nodejs-cli"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "author": "Hritik Kumar Sinha",
   "license": "ISC",
   "type": "module",
