@@ -3,22 +3,24 @@ import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import shebang from 'rollup-plugin-preserve-shebang';
+import { terser } from '@rollup/plugin-terser';
 
 export default {
     input: 'src/index.ts',
     output: {
         file: 'dist/index.js',
         format: 'esm',
-        // banner: '#!/usr/bin/env node',
     },
     plugins: [
-        shebang(),
-        nodeResolve({ preferBuiltins: true }),
-        commonjs(),
-        json(),
+        shebang(), // preserves #!/usr/bin/env node
+        nodeResolve({ preferBuiltins: true }), // resolve node modules
+        commonjs(), // convert commonjs to esm
+        json(), // allow importing JSON
         typescript({ tsconfig: './tsconfig.json', declaration: false }), // no .d.ts
+        terser(), // minify
     ],
     external: [
+        // only keep Node.js built-ins external, bundle everything else
         'fs',
         'path',
         'os',
@@ -37,7 +39,5 @@ export default {
         'net',
         'tls',
         'perf_hooks',
-        // leave commander external if you want smaller bundles
-        // otherwise Rollup will include it
     ],
 };
