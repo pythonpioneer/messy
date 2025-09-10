@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+eslint.config.ts
+package.json
+package-lock.json
+tsconfig.json
+.prettierrc
