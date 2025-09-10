@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "test": "npm run build && node --test ./dist/__tests__/**/*.test.js",
     "test:coverage": "npm run build && c8 --100 --reporter=text --reporter=html node --expose-gc --test ./dist/__tests__/**/*.test.js",
-    "cli": "npm run build && npm link"
+    "cli": "npm run build && npm link",
+    "build:prod": "rollup -c"
   },
   "bin": {
     "messy": "./dist/index.js"
