@@ -31,4 +31,5 @@ export const AUTHOR_INFO = {
     EMAIL: 'messy@artnhrk.dev',
     NAME: 'Hritik Kumar Sinha',
     GITHUB: 'https://github.com/artnhrk',
+    DOCUMENTATION: 'https://www.npmjs.com/package/mostlymessy',
 };
