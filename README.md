@@ -8,6 +8,9 @@ Unlike cloud-based tools, Messy lives entirely on your machine. It works **100% 
 
 Think of it as a **vault forged in code**: always at your side, ready to guard what matters most, and completely under your control.
 
+![npm](https://img.shields.io/npm/dt/mostlymessy?label=Total%20Downloads&color=blue)
+![npm](https://img.shields.io/npm/dw/mostlymessy?label=Weekly%20Downloads&color=green)
+
 ## Why Messy?
 
 - **100% Secure**: Guard your files with battle-tested password encryption, strengthened with hashing and salting.
