@@ -1,4 +1,6 @@
-# Messy CLI
+# Messy CLI 
+
+[![Buy Me a Coffee](https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-orange)](https://www.buymeacoffee.com/artnhrk)
 
 **Messy CLI** is **your lightweight guardian of secrets**, a command-line companion that keeps your *digital treasures* safe. Whether it’s `code`, `images`, or even `videos`, Messy lets you tuck away your files behind strong encryption and bring them back whenever you choose.
 
@@ -132,3 +134,9 @@ As you explore, encrypt, and unlock your treasures, know that Messy CLI stands q
 > Guard your password like a loyal key, and your vault will remain steadfast, always ready for your next adventure.
 
 With Messy CLI, your files aren’t just safe, they’re **cherished, private, and always under your care**.
+
+## Support
+
+If you like **Messy CLI**, consider supporting my work:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/☕-Buy%20Me%20a%20Coffee-orange)](https://www.buymeacoffee.com/artnhrk)
